@@ -2,13 +2,66 @@
 <html>
 <head>
   <title>Demo 4</title>
+  <style type="text/css">
+
+    body {
+      text-align: center;
+      background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/04/background-5-point.jpg");
+      background-attachment: fixed;
+    }
+
+    #temperature {
+      color: #eeeeee;
+      font-size: 100px;
+      font-family: Century Gothic;
+    }
+
+    #thermostat {
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+    }
+
+    #temperature {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #circle {
+      width: 500px;
+      height: 500px;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+    }
+    
+  </style>
 </head>
 
 <body>
   <script src="jquery.js"></script>
-  <button type="button" id="increase">+</button>
-  <button type="button" id="decrease">-</button>
-  <div id="temperature">20</div>
+  <div id="thermostat">
+    <p id="temperature">20</p>
+    <button type="button" id="increase">+</button>
+    <button type="button" id="decrease">-</button>
+  </div>
+  <div id="circle">
+    <svg width="400", height="600">
+      <circle cx="200" cy="270" r="150" stroke="#eeeeee" stroke-width="6" fill-opacity="0" />
+    </svg>
+  </div>
   <script src="src/demo4.js"></script>
 </body>
 </html>
