@@ -1,26 +1,15 @@
-// alert("Great, this file is correctly being required");
-
-var FizzBuzz = function() {
-
+function FizzBuzz() {
+  this.respond = function(i) {
+    return i % 3 === 0;
+  };
 };
 
-FizzBuzz.prototype.divisibleByThree = function(number) {
-  return number % 3 === 0;
-};
+var fizzbuzz = new FizzBuzz;
 
-var f;
+var a = prompt("Please enter a number");
 
-f = new FizzBuzz();
+a = parseInt(a);
 
-var number = prompt("Please enter a number");
+var output = fizzbuzz.respond(a).toString();
 
-// alert("You have entered the number " + number);
-
-number = parseInt(number);
-
-// alert("Now the number " + number + " becomes a int instead of string");
-
-if f.divisibleByThree(number)
-{
-  alert("The number " + number + "is divisible by three");
-}
+alert("Divisible by 3? " + output);
