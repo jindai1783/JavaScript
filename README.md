@@ -1,4 +1,8 @@
 # JavaScript
 
-This repository is create for studying the basics of JavaScript and Jasmine
-
+## Objectives
+* Try front end development:
+  * Javascript
+  * CSS
+  * Html
+  * Jquery
